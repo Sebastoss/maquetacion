@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Nunito;
+    color: #707070;
+    
+}
+
+header {
+    height: 110px;
+    border-top: 8px solid #E16D65;
+    display: flex;
+    align-content: center;
+}
+
+#top {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; /* separacion izq der */
+}
+
+/* ###### MENÚ ###### */
+header a {
+    text-decoration: none;
+}
+
+#top :not( nav a ) {
+    color: #E16D65;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 0px;
+}
+
+#top nav a {
+    color: #707070;
+    padding: 20px 0px 20px 35px;
+}
+
+#top nav a:hover {
+    color: #E8988A;
+}
+
+/* ###### FIN MENÚ ###### */
+
+/* ###### HERO IMG ###### */
+
+#hero {
+    height: 350px;
+    background-image: url(../imagenes/pink-desk.webp);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* ###### FIN HERO IMG ###### */
+
+/* ###### MAIN ###### */
+
+
+main {
+    width: 900px;
+    margin: auto;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap; /* respeta los anchos */
+    justify-content: space-between;
+    margin-top: 30px;
+}
+    main h1 {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    main article {
+        width: 400px;        
+    }
+
+    main article h2 {
+        font-size: 16px;
+        background-image: url(../imagenes/flaticons/wrench-sunglo.png);
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        margin-bottom: 15px;
+    }
+
+
+/* ###### FIN MAIN ###### */
+
+/* ###### FOOTER ###### */
+
+footer {
+    height: 110px;
+    width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer nav {
+    text-align: center;
+    width: 100%;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #707070;
+    margin-left: 20px;
+}
+
+footer nav a:hover {
+    color: #E8988A;
+}
+
+
+footer a img {
+    width: 20px;
+    margin: 15px;
+    
+}
+
+footer a img:hover {
+    filter: invert(0.4) grayscale(1) hue-rotate(20deg) saturate(1000%);
+}
+/* ###### FIN FOOTER ###### */
